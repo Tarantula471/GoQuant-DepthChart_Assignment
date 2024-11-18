@@ -22,6 +22,7 @@ if (typeof Highcharts === "object") {
 }
 
 const tradePairs = [
+  "btc/usdt",
   "bnb/usdt",
   "eth/usdt",
   "sol/usdt",
