@@ -16,7 +16,6 @@ Run the following command on your local environment:
 ```bash
 git clone https://github.com/Tarantula471/GoQuant-DepthChart_Assignment.git
 cd my-project-name
-npm install
 npm install --force
 ```
 Then, you can run locally in development mode with live reload:
