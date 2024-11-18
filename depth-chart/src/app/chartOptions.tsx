@@ -342,7 +342,7 @@ export const getSpreadIndicatorOptions = (
 ): Highcharts.Options => ({
   chart: {
     animation: {
-      duration: 1000,
+      duration: 500,
     },
     type: "line",
     height: 500,
