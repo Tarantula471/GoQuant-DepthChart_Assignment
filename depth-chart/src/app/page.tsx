@@ -44,11 +44,6 @@ export default function Home() {
           `http://localhost:4080/depth?pair=${pair.replace("/", "")}`
         );
         const data: chartDataResponse = await response.json();
-        // Assuming the data you need is in data.bids or data.asks
-        // const processedData = data.bids.map((bid: [string, string]) =>
-        //   parseFloat(bid[1])
-        // );
-        //   const data1 = data.bids;
         const processedData: chartData = {
           lastUpdateId: data.lastUpdateId,
           bids: data.bids.map(([price, quantity]) => [
@@ -65,7 +60,7 @@ export default function Home() {
           bids: processedData.bids.map(([price, quantity], index) => ({
             x: index,
             y: quantity,
-            price: price - quantity,
+            price: price,
           })),
           asks: processedData.asks.map(([price, quantity], index) => ({
             x: index,
