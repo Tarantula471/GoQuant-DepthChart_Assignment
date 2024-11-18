@@ -7,7 +7,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "frontend": "npm run dev",
+    "backend": "node src/server.js"
   },
   "dependencies": {
     "@binance/connector": "^3.5.0",
